@@ -9,3 +9,4 @@ But if you do, make sure that:
 - You build the provided C++ wrapper [`heckioctrl.cpp`](heckioctrl.cpp) with yout project.
 - The `HexIO.sys` file (provided with the `hexiosupp.lib`) can be found (only searched for in the CWD).
 - The provided DLL [`heckiosupp.dll`](heckiosupp.dll) is placed along with the executable.
+- You're running it on **Windows XP** or lower. It relies on `_inp` and friends that were deprecated at some point and won't work on any modern Windows version. 
